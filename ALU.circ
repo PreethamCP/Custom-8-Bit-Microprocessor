@@ -81,8 +81,8 @@
       <circ-port dir="in" pin="190,20" x="510" y="280"/>
       <circ-port dir="in" pin="250,140" x="510" y="260"/>
       <circ-port dir="in" pin="250,230" x="510" y="300"/>
-      <circ-port dir="in" pin="250,60" x="440" y="120"/>
-      <circ-port dir="in" pin="250,80" x="480" y="120"/>
+      <circ-port dir="in" pin="250,60" x="480" y="120"/>
+      <circ-port dir="in" pin="250,80" x="440" y="120"/>
       <circ-port dir="in" pin="410,480" x="510" y="320"/>
       <circ-port dir="out" pin="700,200" x="510" y="160"/>
       <circ-port dir="out" pin="710,120" x="510" y="180"/>
