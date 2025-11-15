@@ -100,5 +100,5 @@ Add automated tests and simulation scripts to run sample programs
 ## 📬 Contact / Author
 
 Created by Preetham — feel free to open issues or PRs for improvements.
-I tried made it without using chatgpt and with little reference form other as i wanted to try making without anyones help
-So there will be many areas where many things can be improved
+
+I attempted to build this project entirely on my own, with only minimal reference from others(including chatgpt),while trying to keep it as simple as possible, as I wanted to challenge myself and understand every part of the design. Because of that, there may be areas that can be improved — suggestions and contributions are welcome!
