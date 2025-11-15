@@ -29,7 +29,7 @@
       <a name="facing" val="south"/>
     </tool>
     <tool name="Controlled Buffer">
-      <a name="facing" val="south"/>
+      <a name="width" val="8"/>
     </tool>
     <tool name="Controlled Inverter">
       <a name="facing" val="north"/>
@@ -53,18 +53,18 @@
   <lib desc="#BFH-Praktika" name="9"/>
   <lib desc="#Input/Output-Extra" name="10"/>
   <lib desc="#Soc" name="11"/>
-  <lib desc="file#ALU.circ" name="12">
-    <tool name="ALU">
-      <a name="facing" val="east"/>
-    </tool>
-  </lib>
-  <lib desc="file#PC.circ" name="13"/>
-  <lib desc="file#CU.circ" name="14">
+  <lib desc="file#CU.circ" name="12">
     <tool name="CU">
       <a name="facing" val="east"/>
     </tool>
   </lib>
-  <lib desc="file#CK.circ" name="15"/>
+  <lib desc="file#CK.circ" name="13"/>
+  <lib desc="file#PC.circ" name="14"/>
+  <lib desc="file#ALU.circ" name="15">
+    <tool name="ALU">
+      <a name="facing" val="east"/>
+    </tool>
+  </lib>
   <main name="main"/>
   <options>
     <a name="gateUndefined" val="ignore"/>
@@ -142,18 +142,6 @@
       <a name="facing" val="west"/>
       <a name="incoming" val="16"/>
     </comp>
-    <comp lib="0" loc="(1260,750)" name="Pin">
-      <a name="appearance" val="classic"/>
-      <a name="facing" val="west"/>
-      <a name="output" val="true"/>
-      <a name="width" val="16"/>
-    </comp>
-    <comp lib="0" loc="(1490,430)" name="Pin">
-      <a name="appearance" val="classic"/>
-      <a name="facing" val="west"/>
-      <a name="output" val="true"/>
-      <a name="width" val="8"/>
-    </comp>
     <comp lib="0" loc="(170,100)" name="Constant"/>
     <comp lib="0" loc="(200,610)" name="Pin">
       <a name="appearance" val="classic"/>
@@ -172,12 +160,6 @@
     <comp lib="0" loc="(550,100)" name="Constant"/>
     <comp lib="0" loc="(670,100)" name="Constant"/>
     <comp lib="0" loc="(800,100)" name="Constant"/>
-    <comp lib="0" loc="(870,810)" name="Pin">
-      <a name="appearance" val="classic"/>
-      <a name="facing" val="west"/>
-      <a name="output" val="true"/>
-      <a name="width" val="8"/>
-    </comp>
     <comp lib="0" loc="(90,620)" name="Pin">
       <a name="appearance" val="classic"/>
       <a name="facing" val="west"/>
@@ -226,21 +208,21 @@
     <comp lib="1" loc="(960,630)" name="Controlled Buffer">
       <a name="facing" val="north"/>
     </comp>
-    <comp lib="12" loc="(90,580)" name="ALU"/>
-    <comp lib="13" loc="(1120,190)" name="PC">
+    <comp lib="12" loc="(290,370)" name="CU"/>
+    <comp lib="14" loc="(1120,190)" name="PC">
       <a name="label" val="RAM_L"/>
     </comp>
-    <comp lib="13" loc="(1120,350)" name="PC">
+    <comp lib="14" loc="(1120,350)" name="PC">
       <a name="label" val="RAM_H"/>
     </comp>
-    <comp lib="13" loc="(1120,510)" name="PC"/>
-    <comp lib="13" loc="(1120,640)" name="PC"/>
-    <comp lib="14" loc="(290,370)" name="CU"/>
+    <comp lib="14" loc="(1120,510)" name="PC"/>
+    <comp lib="14" loc="(1120,640)" name="PC"/>
+    <comp lib="15" loc="(90,580)" name="ALU"/>
     <comp lib="4" loc="(1220,490)" name="ROM">
       <a name="addrWidth" val="16"/>
       <a name="appearance" val="logisim_evolution"/>
       <a name="contents">addr/data: 16 8
-60 f0 f0 7*0 58 85 85 86
+60 ff ff 7*0 58 85 85 86
 84 44 7 44 7 44 7 44
 7 44 7 44 7 44 7 44
 7 44 7 44 7 44 7 44
@@ -383,20 +365,17 @@
     <wire from="(1120,190)" to="(1140,190)"/>
     <wire from="(1120,230)" to="(1130,230)"/>
     <wire from="(1120,350)" to="(1140,350)"/>
-    <wire from="(1120,510)" to="(1130,510)"/>
+    <wire from="(1120,510)" to="(1140,510)"/>
     <wire from="(1120,550)" to="(1130,550)"/>
     <wire from="(1120,640)" to="(1140,640)"/>
     <wire from="(1130,230)" to="(1130,260)"/>
-    <wire from="(1130,430)" to="(1130,510)"/>
-    <wire from="(1130,430)" to="(1490,430)"/>
-    <wire from="(1130,510)" to="(1140,510)"/>
     <wire from="(1130,550)" to="(1130,580)"/>
     <wire from="(1140,200)" to="(1140,350)"/>
     <wire from="(1140,520)" to="(1140,640)"/>
     <wire from="(1160,180)" to="(1240,180)"/>
     <wire from="(1160,220)" to="(1160,280)"/>
     <wire from="(1160,220)" to="(1240,220)"/>
-    <wire from="(1160,500)" to="(1200,500)"/>
+    <wire from="(1160,500)" to="(1220,500)"/>
     <wire from="(1170,230)" to="(1170,270)"/>
     <wire from="(1170,230)" to="(1240,230)"/>
     <wire from="(1180,100)" to="(1180,260)"/>
@@ -408,9 +387,6 @@
     <wire from="(1180,470)" to="(1280,470)"/>
     <wire from="(120,200)" to="(120,330)"/>
     <wire from="(120,200)" to="(240,200)"/>
-    <wire from="(1200,500)" to="(1200,750)"/>
-    <wire from="(1200,500)" to="(1220,500)"/>
-    <wire from="(1200,750)" to="(1260,750)"/>
     <wire from="(1290,450)" to="(1290,460)"/>
     <wire from="(130,150)" to="(130,190)"/>
     <wire from="(130,190)" to="(300,190)"/>
@@ -566,10 +542,7 @@
     <wire from="(780,80)" to="(780,210)"/>
     <wire from="(780,80)" to="(800,80)"/>
     <wire from="(800,590)" to="(800,720)"/>
-    <wire from="(800,720)" to="(830,720)"/>
-    <wire from="(830,720)" to="(1020,720)"/>
-    <wire from="(830,720)" to="(830,810)"/>
-    <wire from="(830,810)" to="(870,810)"/>
+    <wire from="(800,720)" to="(1020,720)"/>
     <wire from="(870,330)" to="(980,330)"/>
     <wire from="(870,350)" to="(990,350)"/>
     <wire from="(870,370)" to="(1000,370)"/>
