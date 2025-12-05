@@ -55,7 +55,7 @@ Supported simulator:
 
 ## ▶️ How to Run (quick)
 
-Open the .circ file in Logisim Evolution.
+Open the CPU.circ file in Logisim Evolution.
 
 Load or edit the ROM (some ROMs are plain .hex files you can import into the ROM component).
 
