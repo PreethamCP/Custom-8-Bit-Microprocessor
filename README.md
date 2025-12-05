@@ -37,6 +37,7 @@ There are many instruction that are not yet completed that i am currently workin
 - Register file design
 - Memory interface
 
+![alt text](<Screenshot (1237).png>)
 ---
 
 ## 🧪 Simulation
