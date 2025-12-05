@@ -4,7 +4,6 @@
 
   <lib desc="#Wiring" name="0">
     <tool name="Splitter">
-      <a name="facing" val="west"/>
       <a name="fanout" val="8"/>
       <a name="incoming" val="8"/>
     </tool>
@@ -53,22 +52,22 @@
   <lib desc="#BFH-Praktika" name="9"/>
   <lib desc="#Input/Output-Extra" name="10"/>
   <lib desc="#Soc" name="11"/>
-  <lib desc="file#CU.circ" name="12">
+  <lib desc="file#CK.circ" name="12"/>
+  <lib desc="file#CU.circ" name="13">
     <tool name="CU">
       <a name="facing" val="east"/>
     </tool>
   </lib>
-  <lib desc="file#ALU.circ" name="13">
+  <lib desc="file#ALU.circ" name="14">
     <tool name="ALU">
       <a name="facing" val="east"/>
     </tool>
   </lib>
-  <lib desc="file#PC.circ" name="14">
+  <lib desc="file#PC.circ" name="15">
     <tool name="PC">
       <a name="facing" val="north"/>
     </tool>
   </lib>
-  <lib desc="file#CK.circ" name="15"/>
   <main name="main"/>
   <options>
     <a name="gateUndefined" val="ignore"/>
@@ -255,17 +254,17 @@
     <comp lib="1" loc="(970,600)" name="Controlled Buffer">
       <a name="facing" val="south"/>
     </comp>
-    <comp lib="12" loc="(290,370)" name="CU"/>
-    <comp lib="13" loc="(90,580)" name="ALU"/>
-    <comp lib="14" loc="(1090,520)" name="PC"/>
-    <comp lib="14" loc="(1090,650)" name="PC"/>
-    <comp lib="14" loc="(1110,300)" name="PC">
+    <comp lib="13" loc="(290,370)" name="CU"/>
+    <comp lib="14" loc="(90,580)" name="ALU"/>
+    <comp lib="15" loc="(1090,520)" name="PC"/>
+    <comp lib="15" loc="(1090,650)" name="PC"/>
+    <comp lib="15" loc="(1110,300)" name="PC">
       <a name="label" val="RAM_H"/>
     </comp>
-    <comp lib="14" loc="(1120,140)" name="PC">
+    <comp lib="15" loc="(1120,140)" name="PC">
       <a name="label" val="RAM_L"/>
     </comp>
-    <comp lib="14" loc="(910,80)" name="PC">
+    <comp lib="15" loc="(910,80)" name="PC">
       <a name="facing" val="north"/>
       <a name="label" val="Stack_Pointer"/>
     </comp>

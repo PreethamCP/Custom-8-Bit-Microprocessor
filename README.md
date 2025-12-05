@@ -39,6 +39,9 @@ There are many instruction that are not yet completed that i am currently workin
 
 ![alt text](<Screenshot (1237).png>)
 ---
+![alt text](<docs/Screenshot (1240).png>)
+
+![alt text](<docs/Screenshot (1239).png>)
 
 ## 🧪 Simulation
 
