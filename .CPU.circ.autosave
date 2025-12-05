@@ -63,12 +63,12 @@
       <a name="facing" val="east"/>
     </tool>
   </lib>
-  <lib desc="file#PC.circ" name="14">
+  <lib desc="file#CK.circ" name="14"/>
+  <lib desc="file#PC.circ" name="15">
     <tool name="PC">
       <a name="facing" val="north"/>
     </tool>
   </lib>
-  <lib desc="file#CK.circ" name="15"/>
   <main name="main"/>
   <options>
     <a name="gateUndefined" val="ignore"/>
@@ -257,15 +257,15 @@
     </comp>
     <comp lib="12" loc="(290,370)" name="CU"/>
     <comp lib="13" loc="(90,580)" name="ALU"/>
-    <comp lib="14" loc="(1090,520)" name="PC"/>
-    <comp lib="14" loc="(1090,650)" name="PC"/>
-    <comp lib="14" loc="(1110,300)" name="PC">
+    <comp lib="15" loc="(1090,520)" name="PC"/>
+    <comp lib="15" loc="(1090,650)" name="PC"/>
+    <comp lib="15" loc="(1110,300)" name="PC">
       <a name="label" val="RAM_H"/>
     </comp>
-    <comp lib="14" loc="(1120,140)" name="PC">
+    <comp lib="15" loc="(1120,140)" name="PC">
       <a name="label" val="RAM_L"/>
     </comp>
-    <comp lib="14" loc="(910,80)" name="PC">
+    <comp lib="15" loc="(910,80)" name="PC">
       <a name="facing" val="north"/>
       <a name="label" val="Stack_Pointer"/>
     </comp>
