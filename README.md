@@ -2,6 +2,8 @@
 
 This repository contains the complete design, architecture, and implementation details of a custom-built 8‑bit microprocessor. The goal of the project is to design a Turing-complete 8‑bit CPU with a 16‑bit address bus, a compact custom ISA, and a simulation-ready microarchitecture.
 
+![alt text](<docs/Screenshot (1241).png>)
+
 ## 🚀 Key Features
 
 - 8‑bit data bus
